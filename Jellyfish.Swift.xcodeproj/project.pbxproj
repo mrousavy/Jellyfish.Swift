@@ -10,6 +10,12 @@
 		B83C10D521776AD500377E72 /* Jellyfish_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C10CB21776AD500377E72 /* Jellyfish_Swift.framework */; };
 		B83C10DA21776AD500377E72 /* Jellyfish_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83C10D921776AD500377E72 /* Jellyfish_SwiftTests.swift */; };
 		B83C10DC21776AD500377E72 /* Jellyfish_Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = B83C10CE21776AD500377E72 /* Jellyfish_Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B83C10EE21776C0000377E72 /* NSObject+Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83C10E521776C0000377E72 /* NSObject+Bindable.swift */; };
+		B83C10EF21776C0000377E72 /* UIControls+Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83C10E621776C0000377E72 /* UIControls+Bindable.swift */; };
+		B83C10F021776C0000377E72 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83C10E721776C0000377E72 /* Observable.swift */; };
+		B83C10F121776C0000377E72 /* BlockBasedSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83C10E921776C0000377E72 /* BlockBasedSelector.swift */; };
+		B83C10F521776C0000377E72 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83C10ED21776C0000377E72 /* Bindable.swift */; };
+		B83C10F721776C6200377E72 /* BlockBasedSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = B83C10F621776C6200377E72 /* BlockBasedSelector.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +35,14 @@
 		B83C10D421776AD500377E72 /* Jellyfish.SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Jellyfish.SwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B83C10D921776AD500377E72 /* Jellyfish_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jellyfish_SwiftTests.swift; sourceTree = "<group>"; };
 		B83C10DB21776AD500377E72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B83C10E521776C0000377E72 /* NSObject+Bindable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Bindable.swift"; sourceTree = "<group>"; };
+		B83C10E621776C0000377E72 /* UIControls+Bindable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControls+Bindable.swift"; sourceTree = "<group>"; };
+		B83C10E721776C0000377E72 /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		B83C10E921776C0000377E72 /* BlockBasedSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockBasedSelector.swift; sourceTree = "<group>"; };
+		B83C10ED21776C0000377E72 /* Bindable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
+		B83C10F621776C6200377E72 /* BlockBasedSelector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockBasedSelector.m; sourceTree = "<group>"; };
+		B83C10F821776C7700377E72 /* BlockBasedSelector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockBasedSelector.h; sourceTree = "<group>"; };
+		B83C10F921776CDD00377E72 /* Jellyfish.Swift-Binding-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Jellyfish.Swift-Binding-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +85,11 @@
 		B83C10CD21776AD500377E72 /* Jellyfish.Swift */ = {
 			isa = PBXGroup;
 			children = (
+				B83C10ED21776C0000377E72 /* Bindable.swift */,
+				B83C10E821776C0000377E72 /* BlockBasedSelector */,
+				B83C10E521776C0000377E72 /* NSObject+Bindable.swift */,
+				B83C10E721776C0000377E72 /* Observable.swift */,
+				B83C10E621776C0000377E72 /* UIControls+Bindable.swift */,
 				B83C10CE21776AD500377E72 /* Jellyfish_Swift.h */,
 				B83C10CF21776AD500377E72 /* Info.plist */,
 			);
@@ -84,6 +103,17 @@
 				B83C10DB21776AD500377E72 /* Info.plist */,
 			);
 			path = Jellyfish.SwiftTests;
+			sourceTree = "<group>";
+		};
+		B83C10E821776C0000377E72 /* BlockBasedSelector */ = {
+			isa = PBXGroup;
+			children = (
+				B83C10E921776C0000377E72 /* BlockBasedSelector.swift */,
+				B83C10F621776C6200377E72 /* BlockBasedSelector.m */,
+				B83C10F821776C7700377E72 /* BlockBasedSelector.h */,
+				B83C10F921776CDD00377E72 /* Jellyfish.Swift-Binding-Header.h */,
+			);
+			path = BlockBasedSelector;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +178,7 @@
 				TargetAttributes = {
 					B83C10CA21776AD500377E72 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 					B83C10D321776AD500377E72 = {
 						CreatedOnToolsVersion = 10.0;
@@ -194,6 +225,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B83C10F721776C6200377E72 /* BlockBasedSelector.m in Sources */,
+				B83C10EF21776C0000377E72 /* UIControls+Bindable.swift in Sources */,
+				B83C10F521776C0000377E72 /* Bindable.swift in Sources */,
+				B83C10F021776C0000377E72 /* Observable.swift in Sources */,
+				B83C10F121776C0000377E72 /* BlockBasedSelector.swift in Sources */,
+				B83C10EE21776C0000377E72 /* NSObject+Bindable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +378,7 @@
 		B83C10E021776AD500377E72 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -358,6 +396,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mrousavy.Jellyfish-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Jellyfish.Swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +406,7 @@
 		B83C10E121776AD500377E72 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -383,6 +424,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mrousavy.Jellyfish-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Jellyfish.Swift-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -391,6 +433,7 @@
 		B83C10E321776AD500377E72 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CJW62Q77E7;
 				INFOPLIST_FILE = Jellyfish.SwiftTests/Info.plist;
@@ -409,6 +452,7 @@
 		B83C10E421776AD500377E72 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CJW62Q77E7;
 				INFOPLIST_FILE = Jellyfish.SwiftTests/Info.plist;
